@@ -20,3 +20,13 @@ OS:
 
 
 
+We use the MIT License.
+At the same time, let's add a clause::
+  No commercial use
+
+Now, I want to promote our Minecraft server:
+  Sanmao's mechanical casual server!
+  We believe that in the future we will turn our server into the best Minecraft survival server!
+  it is we Server IP：
+    sanmaoserver.tech:25565
+  The Server Web is In development
