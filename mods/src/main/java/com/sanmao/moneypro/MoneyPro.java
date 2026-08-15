@@ -42,7 +42,7 @@ public class MoneyPro
                 public String getDescriptionId() {
                     return "sanmao.moneypro.item_OneYuanCoin";
     }
-}
+});
 
     // Creates a creative tab with the id "examplemod:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
