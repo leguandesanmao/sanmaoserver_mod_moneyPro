@@ -37,7 +37,7 @@ public class MoneyPro
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     public static final RegistryObject<Item>ONE_YUAN_COIN = ITEMS.register("one_yuan_coin",
-            () -> new Item(new Item.Properties())) {
+            () -> new Item(new Item.Properties()) {
                 @Override
                 public String getDescriptionId() {
                     return "sanmao.moneypro.item_OneYuanCoin";
