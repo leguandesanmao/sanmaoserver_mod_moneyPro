@@ -26,7 +26,7 @@ OS:
 
 We use the MIT License.
 At the same time, let's add a clause::
-  #No commercial use
+#  No commercial use
 
 Now, I want to promote our Minecraft server:
   Sanmao's mechanical casual server!
