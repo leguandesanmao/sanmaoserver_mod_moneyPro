@@ -47,7 +47,7 @@ public class MoneyPro
 
     //物品:五角硬币
     public static final RegistryObject<Item>FIFTY_CENT_COIN = ITEMS.register("50_cent_coin",
-            () -> new Item(new Item.ProPerties()) {
+            () -> new Item(new Item.Properties()) {
                 @Override
                 public String getDescriptionId() {
                     return "sanmao.moneypro.item_FiftyCentCoin";
@@ -56,7 +56,7 @@ public class MoneyPro
 
     //物品:一角硬币
     public static final RegistryObject<Item>TEN_CENT_COIN = ITEMS.register("10_cent_coin",
-            () -> new Item(new Item.ProPerties()) {
+            () -> new Item(new Item.Properties()) {
                 @Override
                 public String getDescriptionId() {
                     return "sanmao.moneypro.item_TenCentCoin";
