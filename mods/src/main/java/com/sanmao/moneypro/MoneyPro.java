@@ -36,21 +36,43 @@ public class MoneyPro
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "examplemod" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
+    //物品:一元硬币
     public static final RegistryObject<Item>ONE_YUAN_COIN = ITEMS.register("one_yuan_coin",
             () -> new Item(new Item.Properties()) {
                 @Override
                 public String getDescriptionId() {
                     return "sanmao.moneypro.item_OneYuanCoin";
-    }
-});
+        }
+    });
 
-    // Creates a creative tab with the id "examplemod:example_tab" for the example item, that is placed after the combat tab
+    //物品:五角硬币
+    public static final RegistryObject<Item>FIFTY_CENT_COIN = ITEMS.register("50_cent_coin",
+            () -> new Item(new Item.ProPerties()) {
+                @Override
+                public String getDescriptionId() {
+                    return "sanmao.moneypro.item_FiftyCentCoin";
+                }
+            });
+
+    //物品:一角硬币
+    public static final RegistryObject<Item>TEN_CENT_COIN = ITEMS.register("10_cent_coin",
+            () -> new Item(new Item.ProPerties()) {
+                @Override
+                public String getDescriptionId() {
+                    return "sanmao.moneypro.item_TenCentCoin";
+                }
+            });
+
+    //创造模式物品栏:硬币
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("sanmao.moneypro.CreativeModeInventory_coin"))
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ONE_YUAN_COIN.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(ONE_YUAN_COIN.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                //包含的物品
+                output.accept(ONE_YUAN_COIN.get());     //一元硬币
+                output.accept(FIFTY_CENT_COIN.get());   //五角硬币
+                output.accept(TEN_CENT_COIN.get());     //一角硬币
             }).build());
 
     public MoneyPro(FMLJavaModLoadingContext context)

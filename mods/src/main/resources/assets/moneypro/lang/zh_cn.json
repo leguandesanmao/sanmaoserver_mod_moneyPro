@@ -1,4 +1,6 @@
 {
   "sanmao.moneypro.CreativeModeInventory_coin": "硬币",
-  "sanmao.moneypro.item_OneYuanCoin":"一元硬币"
+  "sanmao.moneypro.item_OneYuanCoin":"一元硬币",
+  "sanmao.moneypro.item_FiftyCentCoin": "五角硬币",
+  "sanmao.moneypro.item_TenCentCoin": "一角硬币"
 }
