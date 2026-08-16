@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "moneypro:item/50_cent_coin",
-		"particle": "moneypro:item/50_cent_coin"
+		"0": "moneypro:item/50_cenc_coin",
+		"particle": "moneypro:item/50_cenc_coin"
 	},
 	"elements": [
 		{
@@ -82,13 +82,18 @@
 			"scale": [0.5, 0.54, 1]
 		},
 		"firstperson_righthand": {
-			"translation": [0, 2, 4.25]
+			"translation": [0, 2, 7],
+			"scale": [0.5, 0.5, 1]
 		},
 		"firstperson_lefthand": {
-			"translation": [1.75, 2, 4.25]
+			"translation": [1.75, 2, 6.75],
+			"scale": [0.5, 0.5, 1]
+		},
+		"ground": {
+			"scale": [0.5, 0.5, 1]
 		},
 		"fixed": {
-			"rotation": [0, 180, 0],
+			"rotation": [0, -180, 0],
 			"translation": [0, 0, -8]
 		},
 		"on_shelf": {
