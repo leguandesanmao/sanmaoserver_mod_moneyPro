@@ -63,9 +63,9 @@ public class MoneyPro
                 }
             });
 
-    //创造模式物品栏:硬币
+    //创造模式物品栏:货币成品
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("sanmao.moneypro.CreativeModeInventory_coin"))
+            .title(Component.translatable("sanmao.moneypro.CreativeModeInventory_CurrencyProducts"))
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ONE_YUAN_COIN.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
